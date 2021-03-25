@@ -1,0 +1,350 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  margin-bottom: 100px;
+  position: relative;
+
+  /* выше установили ограничения для секции */
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
+  left: 64px;
+  top: 30px;
+}
+
+.header__main-illustration {
+  z-index: 1;
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+}
+
+.header__title {
+  width: 730px;
+  height: 96px;
+  font-size: 102px;
+  z-index: 1;
+  margin-left: 64px;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 400px;
+  height: 25px;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__square-pic {
+  position: absolute;
+  top: 64px;
+  width: 568px;
+  height: 564px;
+  right: 0;
+  background-color: #2f80ed;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2f80ed;
+  margin-top: 30px;
+}
+
+.two-columns__main-text {
+  font-size: 24px;
+  width: 80%;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph_first {
+  margin-bottom: 30px;
+}
+
+.two-columns__span-accent {
+  font-weight: bolder;
+}
+
+.digits {
+  margin-bottom: 100px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.section-subtitle {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.feynman {
+  position: relative;
+  background-image: url(../images/feynman.png);
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 867px 637px;
+  min-height: 790px;
+  padding-top: 100px;
+}
+
+.feynman__title {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 70px;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bolder;
+}
+
+.feynman__subtitle {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 648px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynmam__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.kaufman {
+  padding-top: 90px;
+  background-color: black;
+  padding-bottom: 90px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section__title_theme_dark {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.section__subtitle_theme_dark {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+}
+
+.table_theme_dark {
+  position: relative;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  z-index: 1;
+}
+
+.table__cell_theme_dark {
+  color: white;
+  margin-top: 80px;
+  width: 200px;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  right: -210px;
+  top: 0;
+}
+
+.footer{
+  min-height: 350px;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer__columns {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ 
+.logo_place_footer {
+  width: 183px;
+  min-height: 35px;
+}
+
+.footer__author {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  margin-top: 18px;
+  margin-bottom: 18px;   
+}
+
+.footer__column-heading {
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.footer__column-links {
+  margin-left: 0;
+  padding-left: 0;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icon {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer__column-link {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal ;
+  margin-left: 0;
+  padding-left: 0;
+}
